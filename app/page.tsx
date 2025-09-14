@@ -103,7 +103,7 @@ export default function HomePage() {
             </Badge>
             <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance leading-tight">
             MintLoop
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 block">AI Conversation Engine</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 block">AI Insurance Engine</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8 text-pretty leading-relaxed">
               A comprehensive insurance management platform featuring AI-powered customer conversations, 
