@@ -1,0 +1,22 @@
+{
+  "transcript": "Yes, I would like to renew my policy. The coverage has been great and I'm happy with the service. When can I make the payment?",
+  "expected_grok_response": {
+    "assistant_text": "That's wonderful to hear! I'm so glad you've been satisfied with your coverage. I can help you renew your policy right away. The renewal process is simple - I can process your payment today and your new policy will be effective immediately. Would you like me to proceed with the renewal?",
+    "mood": {
+      "label": "receptive",
+      "confidence": 0.9
+    },
+    "summary": [
+      "Customer wants to renew policy",
+      "Expressed satisfaction with current coverage",
+      "Asked about payment process"
+    ],
+    "action": "request_payment",
+    "outcome_hint": {
+      "label": "Payment Promised",
+      "confidence": 0.8
+    }
+  },
+  "expected_escalated": false,
+  "description": "Customer is happy with service and wants to renew with payment - Grok should respond positively and facilitate payment"
+}

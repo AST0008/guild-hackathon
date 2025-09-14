@@ -1,0 +1,22 @@
+{
+  "transcript": "This is terrible service! I want to cancel and get a refund. I am very angry about this mistake and want to speak to a manager immediately!",
+  "expected_grok_response": {
+    "assistant_text": "I sincerely apologize for the frustration you're experiencing. I understand you're upset and I want to make sure this gets resolved properly for you. Let me immediately connect you with a manager who can address your concerns and help with the cancellation and refund process. I'm escalating this to our management team right now.",
+    "mood": {
+      "label": "negative",
+      "confidence": 0.95
+    },
+    "summary": [
+      "Customer extremely upset about service",
+      "Demanding cancellation and refund",
+      "Requesting to speak with manager"
+    ],
+    "action": "escalate",
+    "outcome_hint": {
+      "label": "Escalate",
+      "confidence": 0.95
+    }
+  },
+  "expected_escalated": true,
+  "description": "Customer is very upset, wants to cancel, and demands to speak to a manager - Grok should escalate immediately"
+}

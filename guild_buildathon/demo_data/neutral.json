@@ -1,0 +1,22 @@
+{
+  "transcript": "I need to think about it. Can you call me back tomorrow? I have some questions about the coverage and want to discuss with my family first.",
+  "expected_grok_response": {
+    "assistant_text": "Of course, I completely understand wanting to discuss this with your family first. That's a smart approach when making important decisions about your coverage. I'd be happy to call you back tomorrow to answer any questions you might have about your policy. What time would work best for you?",
+    "mood": {
+      "label": "neutral",
+      "confidence": 0.7
+    },
+    "summary": [
+      "Customer needs time to decide",
+      "Requested callback for tomorrow",
+      "Wants to discuss with family first"
+    ],
+    "action": "schedule_followup",
+    "outcome_hint": {
+      "label": "Needs Follow-up",
+      "confidence": 0.8
+    }
+  },
+  "expected_escalated": false,
+  "description": "Customer needs time to decide and requests follow-up call - Grok should be understanding and schedule follow-up"
+}
