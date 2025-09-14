@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+CONVERSATION_FEATURES.md
 
 # testing
 /coverage
