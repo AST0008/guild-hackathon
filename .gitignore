@@ -6,6 +6,7 @@
 .pnp.js
 .yarn/install-state.gz
 CONVERSATION_FEATURES.md
+data-flow-diagram.md
 
 # testing
 /coverage

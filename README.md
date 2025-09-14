@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MintLoop: Insurance Management System
 
-## Getting Started
+## Description
 
-First, run the development server:
+This is a scalable and type-safe Insurance Management System built with Next.js, Python designed to handle customers, documents, payments, communications, and analytics. The system is deployed on AWS Amplify and leverages a modern tech stack for optimal performance and maintainability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*   **Customer Management:** Efficiently manage customer data and interactions.
+*   **Document Handling:** Securely store and manage insurance-related documents using AWS S3.
+*   **Payment Processing:** Handle insurance payments with robust and reliable mechanisms.
+*   **Communication Tools:** Integrated communication features for seamless customer interaction.
+*   **Analytics Dashboard:** Gain insights into key metrics with a comprehensive analytics dashboard.
+*   **PDF Generation & Parsing:** Generate and parse PDF documents using `html-pdf`.
+*   **UI Components:** Utilizes Radix UI for accessible and customizable UI components.
+*   **Form Validation:** Leverages React Hook Form and Zod for robust form validation.
+*   **Authentication:** Secure user authentication.
+*   **Data Visualization:** Utilizes Recharts for creating insightful data visualizations.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*   **Frontend:**
+    *   [Next.js](https://nextjs.org): React framework for building performant web applications.
+    *   [React](https://reactjs.org): JavaScript library for building user interfaces.
+    *   [React Hook Form](https://react-hook-form.com/): Library for form management and validation.
+    *   [Zod](https://zod.dev/): TypeScript-first schema declaration with static type inference.
+    *   [Tailwind CSS](https://tailwindcss.com): Utility-first CSS framework.
+    *   [Lucide React](https://lucide.dev/): Beautifully simple, pixel-perfect icons.
+*   **Backend/Utilities:**
+    *   [FastAPI](https://fastapi.tiangolo.com/): Modern, fast web framework for building APIs with Python.
+    *   [Twilio](https://www.twilio.com/): Cloud communications platform for SMS messaging.
+    *   [@aws-sdk/client-s3](https://www.npmjs.com/package/@aws-sdk/client-s3): AWS SDK for interacting with S3.
+    *   [@aws-sdk/s3-request-presigner](https://www.npmjs.com/package/@aws-sdk/s3-request-presigner): AWS SDK for generating pre-signed S3 URLs.
+    *   [pg](https://node-postgres.com/): PostgreSQL client for Node.js.
+    *   [html-pdf](https://www.npmjs.com/package/html-pdf): HTML to PDF converter
+*   **Other:**
+    *   [PostgreSQL](https://www.postgresql.org/): Database.
+    *   [AWS Amplify](https://aws.amazon.com/amplify/): Cloud platform for deploying and hosting web applications.
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1.  Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    git clone <repository_url>
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2.  Navigate to the project directory:
 
-## Deploy on Vercel
+    ```bash
+    cd guild-hackathon
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3.  Install dependencies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    # or
+    bun install
+    ```
+
+## Usage
+
+1.  Start the development server:
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    # or
+    bun dev
+    ```
+
+2.  Open your browser and navigate to `http://localhost:3000` to view the application.
+
+## License
+
+MIT
