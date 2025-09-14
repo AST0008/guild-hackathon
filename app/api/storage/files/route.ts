@@ -3,10 +3,10 @@ import { S3Client, ListObjectsV2Command } from "@aws-sdk/client-s3"
 import type { StorageFile } from "@/lib/storage-utils"
 
 const s3Client = new S3Client({
-  region: process.env.AWS_S3_REGION!,
+  region: process.env.S3_REGION!,
   credentials: {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
+    accessKeyId: process.env.ACCESS_KEY_ID!,
+    secretAccessKey: process.env.SECRET_ACCESS_KEY!,
   },
 })
 
@@ -34,7 +34,7 @@ function getFileType(filename: string): StorageFile["type"] {
 export async function GET() {
   try {
     const command = new ListObjectsV2Command({
-      Bucket: process.env.AWS_S3_BUCKET_NAME!,
+      Bucket: process.env.S3_BUCKET_NAME!,
       Prefix: "uploads/", // Assuming files are in an 'uploads' folder
     })
 
@@ -48,7 +48,7 @@ export async function GET() {
       .map((file) => {
         const key = file.Key!
         const name = key.replace(/^uploads\/[a-f0-9-]+\-/, "") // Strip UUID prefix from filename
-        const url = `https://${process.env.AWS_S3_BUCKET_NAME}.s3.${process.env.AWS_S3_REGION}.amazonaws.com/${key}`
+        const url = `https://${process.env.S3_BUCKET_NAME}.s3.${process.env.S3_REGION}.amazonaws.com/${key}`
 
         return {
           id: file.ETag?.replace(/"/g, "") || key,
