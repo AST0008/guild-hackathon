@@ -58,7 +58,7 @@ export default function PaymentQRDetailPage() {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
-          <div className="text-muted-foreground">Loading payment data ....</div>
+          <div className="text-muted-foreground">Loading payment data ...</div>
         </div>
       </div>
     )
